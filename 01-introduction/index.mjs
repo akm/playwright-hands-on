@@ -5,8 +5,8 @@ const main = async () => {
   const page = await browser.newPage();
   await page.goto("https://playwright.dev/");
   await page.pause();
-  console.log("exit");
   await page.close();
 };
 
 await main();
+process.exit(0);
