@@ -1,4 +1,4 @@
-const {chromium, Page} = require('playwright-core');
+import { chromium } from "playwright-core";
 
 const main = async () => {
   const browser = await chromium.launch({channel: "chrome", headless: false});
@@ -9,4 +9,4 @@ const main = async () => {
   await page.close();
 }
 
-main();
+await main();
